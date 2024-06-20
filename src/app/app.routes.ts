@@ -7,7 +7,7 @@ import { SecurityComponent } from './pages/security/security.component';
 import { SignupComponent } from './pages/signup/signup.component';
 
 export const routes: Routes = [
-    { path: '', redirectTo: 'login', pathMatch: 'full' },
+    { path: '', redirectTo: 'home', pathMatch: 'full' },
     { path: 'login', component: LoginComponent },
     { path: 'home', component: HomeComponent },
     { path: 'careers', component: CareersComponent },
