@@ -21,6 +21,6 @@ export class NavbarComponent {
 
   closeMenu(): void {
     this.menuHidden = true
-    document.body.classList.add("overflow-hidden");
+    document.body.classList.remove("overflow-hidden");
   }
 }
