@@ -4,21 +4,22 @@
         <img src="logo.svg" class="w-28 md:w-full" alt="Your bank logo">
     </div>
     <div class="hidden lg:flex">
-        <ul class="flex items-center text-lg h-[50px]">
-            <li class="rounded-full cursor-pointer px-5 py-2" [routerLinkActive]="'bg-brand-active'" routerLink="/home">
+        <ul class="flex items-center gap-1 text-lg h-[50px]">
+            <li class="rounded-full cursor-pointer px-5 py-2 duration-500 ease-in-out hover:bg-brand-active hover:opacity-80"
+                [routerLinkActive]="'bg-brand-active hover:opacity-100'" routerLink="/home">
                 Home</li>
-            <li class="rounded-full cursor-pointer px-5 py-2" [routerLinkActive]="'bg-brand-active'"
-                routerLink="/careers">Careers</li>
-            <li class="rounded-full cursor-pointer px-5 py-2" [routerLinkActive]="'bg-brand-active'"
-                routerLink="/about">About</li>
-            <li class="rounded-full cursor-pointer px-5 py-2" [routerLinkActive]="'bg-brand-active'"
-                routerLink="/security">Security</li>
+            <li class="rounded-full cursor-pointer px-5 py-2 duration-500 ease-in-out hover:bg-brand-active hover:opacity-80"
+                [routerLinkActive]="'bg-brand-active'" routerLink="/careers">Careers</li>
+            <li class="rounded-full cursor-pointer px-5 py-2 duration-500 ease-in-out hover:bg-brand-active hover:opacity-80"
+                [routerLinkActive]="'bg-brand-active'" routerLink="/about">About</li>
+            <li class="rounded-full cursor-pointer px-5 py-2 duration-500 ease-in-out hover:bg-brand-active hover:opacity-80"
+                [routerLinkActive]="'bg-brand-active'" routerLink="/security">Security</li>
         </ul>
     </div>
     <div class="hidden lg:flex">
         <ul class="flex items-center text-lg">
             <li class="rounded-full cursor-pointer px-5 py-2" routerLink="/signup">Sign Up</li>
-            <li class="bg-brand-primary cursor-pointer text-brand-secondary rounded-full font-medium px-7 py-3"
+            <li class="bg-brand-primary cursor-pointer text-brand-secondary rounded-full font-medium px-7 py-3 duration-300 hover:brightness-[80%] hover:text-black"
                 routerLink="/login">
                 Login</li>
         </ul>
