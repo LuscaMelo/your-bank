@@ -34,7 +34,7 @@
         </button>
     </div>
     <div class="px-3 flex justify-center items-center">
-        <ul class="flex flex-col gap-1 text-lg text-center">
+        <ul class="flex flex-col gap-1 text-lg text-center" (click)="closeMenu()">
             <div class="cursor-pointer mx-auto mb-20" routerLink="">
                 <img src="logo.svg" alt="Your bank logo">
             </div>
@@ -43,7 +43,7 @@
             <li class="rounded-full cursor-pointer px-5 py-2" routerLink="/about">About</li>
             <li class="rounded-full cursor-pointer px-5 py-2" routerLink="/security">Security</li>
             <li class="rounded-full cursor-pointer px-5 py-2" routerLink="/signup">Sign Up</li>
-            <li class="rounded-full cursor-pointer px-5 py-2" routerLink="/signup">Login</li>
+            <li class="rounded-full cursor-pointer px-5 py-2" routerLink="/login">Login</li>
         </ul>
     </div>
 </div>
