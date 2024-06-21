@@ -1,7 +1,7 @@
 <div
     class="bg-brand-secondary flex justify-between items-center rounded-full text-white relative border border-brand-grey border-opacity-5 py-5 px-9 my-14">
     <div class="cursor-pointer" routerLink="">
-        <img src="logo.svg" alt="Your bank logo">
+        <img src="logo.svg" class="w-28 md:w-full" alt="Your bank logo">
     </div>
     <div class="hidden lg:flex">
         <ul class="flex items-center text-lg h-[50px]">
@@ -20,16 +20,17 @@
         </ul>
     </div>
     <div class="flex lg:hidden">
-        <button class="bg-brand-primary cursor-pointer rounded-full px-5 py-3">
+        <button class="bg-brand-primary cursor-pointer rounded-full px-5 py-2 md:py-3" (click)="openMenu()">
             <img class="cursor-pointer" src="menu.svg" alt="Menu icon">
         </button>
     </div>
 
 </div>
-<div class="absolute pt-[20vh] top-0 right-0 w-screen h-screen bg-brand-dark">
+<div class="fixed pt-[20vh] top-0 right-0 w-screen h-screen bg-brand-secondary duration-500 ease-in-out"
+    [ngClass]="menuHidden ? 'right-[250vw]' : ''">
     <div class="absolute left-[3.5%] top-[2.5%]">
-        <button class="bg-brand-primary cursor-pointer rounded-full px-2 py-2">
-            <img class="cursor-pointer" src="close.svg" alt="Menu icon">
+        <button class="bg-brand-primary cursor-pointer rounded-full px-2 py-2" (click)="closeMenu()">
+            <img class=" cursor-pointer" src="close.svg" alt="Menu icon">
         </button>
     </div>
     <div class="px-3 flex justify-center items-center">
