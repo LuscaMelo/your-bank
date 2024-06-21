@@ -12,6 +12,9 @@ module.exports = {
         'brand-grey': '#B3B3B3',
         'brand-active': '#262626',
       },
+      lineHeight: {
+        'brand': '1.5',
+      }
     },
   },
   plugins: [],
