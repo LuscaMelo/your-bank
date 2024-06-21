@@ -5,10 +5,14 @@
     </div>
     <div class="hidden lg:flex">
         <ul class="flex items-center text-lg h-[50px]">
-            <li class="rounded-full cursor-pointer px-5 py-2 bg-brand-active" routerLink="/home">Home</li>
-            <li class="rounded-full cursor-pointer px-5 py-2" routerLink="/careers">Careers</li>
-            <li class="rounded-full cursor-pointer px-5 py-2" routerLink="/about">About</li>
-            <li class="rounded-full cursor-pointer px-5 py-2" routerLink="/security">Security</li>
+            <li class="rounded-full cursor-pointer px-5 py-2" [routerLinkActive]="'bg-brand-active'" routerLink="/home">
+                Home</li>
+            <li class="rounded-full cursor-pointer px-5 py-2" [routerLinkActive]="'bg-brand-active'"
+                routerLink="/careers">Careers</li>
+            <li class="rounded-full cursor-pointer px-5 py-2" [routerLinkActive]="'bg-brand-active'"
+                routerLink="/about">About</li>
+            <li class="rounded-full cursor-pointer px-5 py-2" [routerLinkActive]="'bg-brand-active'"
+                routerLink="/security">Security</li>
         </ul>
     </div>
     <div class="hidden lg:flex">
@@ -38,12 +42,18 @@
             <div class="cursor-pointer mx-auto mb-20" routerLink="">
                 <img src="logo.svg" alt="Your bank logo">
             </div>
-            <li class="rounded-full cursor-pointer px-5 py-2 bg-brand-active" routerLink="/home">Home</li>
-            <li class="rounded-full cursor-pointer px-5 py-2" routerLink="/careers">Careers</li>
-            <li class="rounded-full cursor-pointer px-5 py-2" routerLink="/about">About</li>
-            <li class="rounded-full cursor-pointer px-5 py-2" routerLink="/security">Security</li>
-            <li class="rounded-full cursor-pointer px-5 py-2" routerLink="/signup">Sign Up</li>
-            <li class="rounded-full cursor-pointer px-5 py-2" routerLink="/login">Login</li>
+            <li class="rounded-full cursor-pointer px-5 py-2" [routerLinkActive]="'bg-brand-active'" routerLink="/home">
+                Home</li>
+            <li class="rounded-full cursor-pointer px-5 py-2" [routerLinkActive]="'bg-brand-active'"
+                routerLink="/careers">Careers</li>
+            <li class="rounded-full cursor-pointer px-5 py-2" [routerLinkActive]="'bg-brand-active'"
+                routerLink="/about">About</li>
+            <li class="rounded-full cursor-pointer px-5 py-2" [routerLinkActive]="'bg-brand-active'"
+                routerLink="/security">Security</li>
+            <li class="rounded-full cursor-pointer px-5 py-2" [routerLinkActive]="'bg-brand-active'"
+                routerLink="/signup">Sign Up</li>
+            <li class="rounded-full cursor-pointer px-5 py-2" [routerLinkActive]="'bg-brand-active'"
+                routerLink="/login">Login</li>
         </ul>
     </div>
 </div>
