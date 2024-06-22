@@ -11,4 +11,17 @@ import { RouterLink } from '@angular/router';
 })
 export class HomeComponent {
 
+  buttons: any = [
+    { name: 'For Individuals', active: true },
+    { name: 'For Businesses', active: false }
+  ]
+
+  isActive: boolean = false
+
+  toggle(btnName: string): void {
+    this.buttons.map((btn: any) => {
+      btn.active = !btn.active
+    })
+  }
+
 }
