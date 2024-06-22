@@ -39,7 +39,7 @@
             <div
                 class="bg-brand-secondary border border-brand-grey border-opacity-5 text-sm text-white leading-none rounded-full inline-flex px-3 py-2">
                 <button *ngFor="let btn of buttons" class="inline-flex items-center rounded-full ease-in px-4 py-3"
-                    (click)="toggle(btn.name)"
+                    (click)="toggle()"
                     [ngClass]="btn.active ? 'bg-brand-primary text-brand-dark font-semibold hover:text-brand-dark' : ''">
                     <span>{{btn.name}}</span>
                 </button>

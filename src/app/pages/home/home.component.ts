@@ -1,6 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
+import { Button } from '../../models/button.model';
 
 @Component({
   selector: 'app-home',
@@ -11,15 +12,15 @@ import { RouterLink } from '@angular/router';
 })
 export class HomeComponent {
 
-  buttons: any = [
+  buttons: Button[] = [
     { name: 'For Individuals', active: true },
     { name: 'For Businesses', active: false }
   ]
 
   isActive: boolean = false
 
-  toggle(btnName: string): void {
-    this.buttons.map((btn: any) => {
+  toggle(): void {
+    this.buttons.map((btn: Button) => {
       btn.active = !btn.active
     })
   }
