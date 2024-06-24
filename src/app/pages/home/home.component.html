@@ -25,7 +25,7 @@
     </div>
 </section>
 
-<section class="mb-96">
+<section class="pb-[150px]">
     <div
         class="flex flex-col md:flex-row justify-center items-center text-center md:text-left md:items-end md:justify-between">
         <div class="lg:w-[70%] md:w-[60%]">
@@ -54,10 +54,78 @@
         <div [ngClass]="card.border ? 'lg:border-x lg:border-y-0 md:border-y-0 border-y border-[#262626] lg:px-24 py-10 md:py-0' : ''"
             *ngFor="let card of productsCardList" class="flex flex-col items-center text-center mx-auto">
             <div>
-                <img src={{card.icon}} class="w-28 md:w-full" alt="Your bank logo">
+                <img src={{card.icon}} class="w-28 md:w-full" alt="Card product icon">
             </div>
             <h5 class="mt-[30px] mb-6 text-2xl text-white">{{card.title}}</h5>
             <p class="max-w-[420px]">{{card.text}}</p>
+        </div>
+    </div>
+</section>
+
+<section class="mb-96">
+    <div>
+        <h3
+            class="text-center md:text-left text-[2rem] mt-9 mb-4 font-medium leading-10 text-white lg:leading-brand lg:px-0 lg:text-5xl">
+            Use
+            <span class="text-brand-primary">Cases</span>
+        </h3>
+        <p class="lg:w-[75%] text-center md:text-left">At YourBank, we cater to the diverse needs of individuals and
+            businesses alike, offering a wide range of financial solutions</p>
+    </div>
+    <div class="flex flex-col lg:flex-row gap-[100px] mt-20">
+        <div
+            class="relative grid grid-cols-2 gap-[10px] lg:gap-5 bg-brand-secondary rounded-2xl p-5 lg:p-[50px] flex-1">
+            <div class="absolute w-20 top-0 left-0 z-10">
+                <img src="cases-detail.png" alt="cases detail">
+            </div>
+            <div
+                class="bg-brand-dark rounded-lg h-full flex flex-col lg:p-[30px] px-[14px] py-5 flex-1 items-center z-50">
+                <div>
+                    <img src="cases-icon1.png" alt="Card product icon">
+                </div>
+                <h5 class="lg:text-2xl text-center text-white mt-6">Managing Personal Finances</h5>
+            </div>
+            <div class="bg-brand-dark rounded-lg h-full flex flex-col p-[30px] flex-1 items-center">
+                <div>
+                    <img src="cases-icon1.png" alt="Card product icon">
+                </div>
+                <h5 class="lg:text-2xl text-center text-white mt-6">Saving for the Future</h5>
+            </div>
+            <div class="bg-brand-dark rounded-lg h-full flex flex-col p-[30px] flex-1 items-center">
+                <div>
+                    <img src="cases-icon1.png" alt="Card product icon">
+                </div>
+                <h5 class="lg:text-2xl text-center text-white mt-6">Homeownership</h5>
+            </div>
+            <div class="bg-brand-dark rounded-lg h-full flex flex-col p-[30px] flex-1 items-center">
+                <div>
+                    <img src="cases-icon1.png" alt="Card product icon">
+                </div>
+                <h5 class="lg:text-2xl text-center text-white mt-6">Education Funding</h5>
+            </div>
+        </div>
+        <div class="flex-1 text-center md:text-left">
+            <h5 class="text-3xl text-white mt-6 font-semibold">For Individuals</h5>
+            <p class="mt-[14px] mb-[62px]">At YourBank, we cater to the diverse needs of individuals and
+                businesses alike, offering a wide range of financial solutions</p>
+            <div class="flex flex-col md:flex-row gap-[70px] md:gap-50 mb-[62px]">
+                <div>
+                    <span class="text-[58px] font-semibold text-brand-primary">78%</span>
+                    <p class="mt-3">Secure Retirement Planning</p>
+                </div>
+                <div>
+                    <span class="text-[58px] font-semibold text-brand-primary">63%</span>
+                    <p class="mt-3">Manageable Debt Consolidation</p>
+                </div>
+                <div>
+                    <span class="text-[58px] font-semibold text-brand-primary">91%</span>
+                    <p class="mt-3">Reducing financial burdens</p>
+                </div>
+            </div>
+            <div>
+                <button class="bg-brand-secondary rounded-full py-[18px] px-[24px] border border-[#262626]">Learn
+                    More</button>
+            </div>
         </div>
     </div>
 </section>
