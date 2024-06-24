@@ -55,8 +55,12 @@ export class HomeComponent {
         { percentage: '91%', text: 'Reducing financial burdens' },
       ],
       direction: 'lg:flex-row',
-      cardsIcons: ['cases-icon1.png', 'cases-icon2.png', 'cases-icon3.png', 'cases-icon4.png'],
-      cardTexts: ['Managing Personal Finances', 'Saving for the Future', 'Homeownership', 'Education Funding']
+      cards: [
+        { text: 'Managing Personal Finances', icon: 'cases-icon1.png' },
+        { text: 'Saving for the Future', icon: 'cases-icon2.png' },
+        { text: 'Homeownership', icon: 'cases-icon3.png' },
+        { text: 'Education Funding', icon: 'cases-icon4.png' },
+      ],
     }
 
   businessesContent: any =
@@ -69,7 +73,11 @@ export class HomeComponent {
         { percentage: '45%', text: 'Streamline payroll processing' },
       ],
       direction: 'lg:flex-row-reverse',
-      cardsIcons: ['cases-icon1.png', 'cases-icon2.png', 'cases-icon3.png', 'cases-icon4.png'],
-      cardTexts: ['Managing Personal Finances', 'Saving for the Future', 'Homeownership', 'Education Funding']
+      cards: [
+        { text: 'Startups and Entrepreneurs', icon: 'cases-icon5.png' },
+        { text: 'Cash Flow Management', icon: 'cases-icon6.png' },
+        { text: 'Business Expansion', icon: 'cases-icon7.png' },
+        { text: 'Payment Solutions', icon: 'cases-icon8.png' },
+      ],
     }
 }

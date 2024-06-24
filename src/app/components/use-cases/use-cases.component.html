@@ -3,12 +3,12 @@
         <div class="absolute w-20 lg:w-full top-0 z-10">
             <img src="cases-detail.png" alt="cases detail">
         </div>
-        <div *ngFor="let icon of props.cardsIcons"
+        <div *ngFor="let card of props.cards"
             class="bg-brand-dark rounded-lg h-full flex flex-col lg:p-[30px] px-[14px] py-5 flex-1 items-center z-50">
             <div>
-                <img src={{icon}} alt="Card product icon">
+                <img src={{card.icon}} alt="Card product icon">
             </div>
-            <h5 class="lg:text-2xl text-center text-white mt-6">{{props.title}}</h5>
+            <h5 class="lg:text-2xl text-center text-white mt-6">{{card.text}}</h5>
         </div>
     </div>
     <div class="flex-1 text-center md:text-left">
