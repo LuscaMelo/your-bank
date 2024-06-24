@@ -12,22 +12,9 @@ import { Button } from '../../models/button.model';
 })
 export class HomeComponent {
 
-  //Boggle button
-  buttons: Button[] = [
-    { name: 'For Individuals', active: true },
-    { name: 'For Businesses', active: false }
-  ]
-
   isActive: boolean = false
 
-  toggle(): void {
-    this.buttons.map((btn: Button) => {
-      btn.active = !btn.active
-    })
-    this.productsCardList == this.individuals ? this.productsCardList = this.businesses : this.productsCardList = this.individuals
-  }
-
-  //Cards Our Products
+  //Cards - Our Products
   individuals: any[] = [
     { icon: 'products-icon1.png', title: 'Checking Accounts', text: 'Enjoy easy and convenient access to your funds with our range of checking account options. Benefit from features such as online and mobile banking, debit cards, and free ATM access.', border: false },
     { icon: 'products-icon2.png', title: 'Savings Accounts', text: "Build your savings with our competitive interest rates and flexible savings account options. Whether you're saving for a specific goal or want to grow your wealth over time, we have the right account for you.", border: true },
@@ -41,5 +28,34 @@ export class HomeComponent {
   ]
 
   productsCardList: any = this.individuals
+
+  //Boggle button
+  buttons: Button[] = [
+    { name: 'For Individuals', active: true },
+    { name: 'For Businesses', active: false }
+  ]
+
+  toggle(): void {
+    this.buttons.map((btn: Button) => {
+      btn.active = !btn.active
+    })
+    this.productsCardList == this.individuals ? this.productsCardList = this.businesses : this.productsCardList = this.individuals
+  }
+
+  //Cards - Use Cases
+  useCaseIndividuals: any = [
+    { title: 'Managing Personal Finances', icon: 'cases-icon1.png' },
+    { title: 'Saving for the Future', icon: 'cases-icon2.png' },
+    { title: 'Homeownership', icon: 'cases-icon3.png' },
+    { title: 'Education Funding', icon: 'cases-icon4.png' },
+  ]
+
+  useCaseBusinesses: any = [
+    { title: 'Managing Personal Finances', icon: 'cases-icon1.png' },
+    { title: 'Saving for the Future', icon: 'cases-icon1.png' },
+    { title: 'Homeownership', icon: 'cases-icon1.png' },
+    { title: 'Education Funding', icon: 'cases-icon1.png' },
+  ]
+
 
 }
