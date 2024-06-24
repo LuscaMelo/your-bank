@@ -44,5 +44,32 @@ export class HomeComponent {
     this.productsCardList == this.individuals ? this.productsCardList = this.businesses : this.productsCardList = this.individuals
   }
 
+  //Use cases data
+  individualsContent: any =
+    {
+      title: 'For Individuals',
+      description: 'For individuals, our mortgage services pave the way to homeownership, and our flexible personal loans provide vital support during various life milestones. We also prioritize retirement planning, ensuring a financially secure future for our customers',
+      statistics: [
+        { percentage: '78%', text: 'Secure Retirement Planning' },
+        { percentage: '63%', text: 'Manageable Debt Consolidation' },
+        { percentage: '91%', text: 'Reducing financial burdens' },
+      ],
+      direction: 'lg:flex-row',
+      cardsIcons: ['cases-icon1.png', 'cases-icon2.png', 'cases-icon3.png', 'cases-icon4.png'],
+      cardTexts: ['Managing Personal Finances', 'Saving for the Future', 'Homeownership', 'Education Funding']
+    }
 
+  businessesContent: any =
+    {
+      title: 'For Businesses',
+      description: 'For individuals, our mortgage services pave the way to homeownership, and our flexible personal loans provide vital support during various life milestones. We also prioritize retirement planning, ensuring a financially secure future for our customers',
+      statistics: [
+        { percentage: '65%', text: 'Cash Flow Management' },
+        { percentage: '70%', text: 'Drive Business Expansion' },
+        { percentage: '45%', text: 'Streamline payroll processing' },
+      ],
+      direction: 'lg:flex-row-reverse',
+      cardsIcons: ['cases-icon1.png', 'cases-icon2.png', 'cases-icon3.png', 'cases-icon4.png'],
+      cardTexts: ['Managing Personal Finances', 'Saving for the Future', 'Homeownership', 'Education Funding']
+    }
 }
