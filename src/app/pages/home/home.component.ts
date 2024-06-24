@@ -3,10 +3,12 @@ import { Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { Button } from '../../models/button.model';
 
+import { UseCasesComponent } from '../../components/use-cases/use-cases.component';
+
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [CommonModule, RouterLink],
+  imports: [CommonModule, RouterLink, UseCasesComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
@@ -41,21 +43,6 @@ export class HomeComponent {
     })
     this.productsCardList == this.individuals ? this.productsCardList = this.businesses : this.productsCardList = this.individuals
   }
-
-  //Cards - Use Cases
-  useCaseIndividuals: any = [
-    { title: 'Managing Personal Finances', icon: 'cases-icon1.png' },
-    { title: 'Saving for the Future', icon: 'cases-icon2.png' },
-    { title: 'Homeownership', icon: 'cases-icon3.png' },
-    { title: 'Education Funding', icon: 'cases-icon4.png' },
-  ]
-
-  useCaseBusinesses: any = [
-    { title: 'Managing Personal Finances', icon: 'cases-icon1.png' },
-    { title: 'Saving for the Future', icon: 'cases-icon1.png' },
-    { title: 'Homeownership', icon: 'cases-icon1.png' },
-    { title: 'Education Funding', icon: 'cases-icon1.png' },
-  ]
 
 
 }
