@@ -26,31 +26,7 @@
 </section>
 
 <section class="pb-[150px]">
-    <div
-        class="flex flex-col md:flex-row justify-center items-center text-center md:text-left md:items-end md:justify-between">
-        <app-section-title [props]="titles.ourProducts"></app-section-title>
-        <div class="lg:w-[30%] md:w-[40%] flex justify-end mt-6">
-            <div
-                class="bg-brand-secondary border border-brand-grey border-opacity-5 text-sm text-white leading-none rounded-full inline-flex px-3 py-2">
-                <button *ngFor="let btn of buttons" class="inline-flex items-center rounded-full ease-in px-4 py-3"
-                    (click)="toggle()"
-                    [ngClass]="btn.active ? 'bg-brand-primary text-brand-dark font-semibold hover:text-brand-dark' : ''">
-                    <span>{{btn.name}}</span>
-                </button>
-            </div>
-        </div>
-    </div>
-
-    <div class="flex flex-wrap flex-col md:flex-row gap-10 md:gap-20 lg:flex-nowrap justify-between mt-[100px]">
-        <div [ngClass]="card.border ? 'lg:border-x lg:border-y-0 md:border-y-0 border-y border-[#262626] lg:px-24 py-10 md:py-0' : ''"
-            *ngFor="let card of productsCardList" class="flex flex-col items-center text-center mx-auto">
-            <div>
-                <img src={{card.icon}} class="w-28 md:w-full" alt="Card product icon">
-            </div>
-            <h5 class="mt-[30px] mb-6 text-2xl text-white">{{card.title}}</h5>
-            <p class="max-w-[420px]">{{card.text}}</p>
-        </div>
-    </div>
+    <app-our-products [props]="titles.ourProducts"></app-our-products>
 </section>
 
 <section>
