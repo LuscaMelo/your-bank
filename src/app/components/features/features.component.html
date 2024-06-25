@@ -1,16 +1,16 @@
 <div class="flex flex-col lg:flex-row gap-[30px] mt-20 mb-96">
     <div class="bg-brand-secondary rounded-xl lg:p-[50px] p-5 pe-0 h-full">
-        <div class="flex lg:flex-col gap-5 lg:gap-6 overflow-x-scroll lg:overflow-x-hidden scrollbar rounded-xl">
+        <div class="flex lg:flex-col gap-2 lg:gap-6 overflow-x-scroll lg:overflow-x-hidden scrollbar rounded-xl">
             <button *ngFor="let btn of featuresButtons" (click)="changeFeatures(btn.name)"
                 [ngClass]="btn.active ? 'text-brand-primary font-regular bg-brand-dark' : ''"
-                class="rounded-full min-w-[143px] py-[18px] lg:px-[24px] border border-[#262626] hover:bg-brand-primary hover:text-brand-dark">
+                class="rounded-full min-w-[143px] py-[18px] lg:px-[24px] border border-[#262626] hover:text-brand-primary">
                 {{btn.name}}
             </button>
         </div>
     </div>
     <div class="flex-1">
         <div class="grid grid-cols-1 md:grid-cols-2 gap-[30px]">
-            <div *ngFor="let card of props"
+            <div *ngFor="let card of featuresList"
                 class="col-span-1 p-[25px] lg:p-[50px] bg-brand-secondary rounded-xl border border-[#262626]">
                 <div class="flex justify-between items-baseline">
                     <h5 class="text-lg lg:text-2xl xl:text-3xl text-white mt-6 font-semibold">{{card.title}}</h5>
