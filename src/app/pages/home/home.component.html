@@ -62,7 +62,7 @@
     </div>
 </section>
 
-<section class="mb-96">
+<section>
     <div>
         <h3
             class="text-center md:text-left text-[2rem] mt-9 mb-4 font-medium leading-10 text-white lg:leading-brand lg:px-0 lg:text-5xl">
@@ -74,4 +74,18 @@
     </div>
     <app-use-cases [props]=individualsContent></app-use-cases>
     <app-use-cases [props]=businessesContent></app-use-cases>
+</section>
+
+<section class="mt-[200px]">
+    <div>
+        <h3
+            class="text-center md:text-left text-[2rem] mt-9 mb-4 font-medium leading-10 text-white lg:leading-brand lg:px-0 lg:text-5xl">
+            Our
+            <span class="text-brand-primary">Features</span>
+        </h3>
+        <p class="lg:w-[75%] text-center md:text-left">Experience a host of powerful features at YourBank, including
+            seamless online banking, secure transactions, and personalized financial insights, all designed to enhance
+            your banking experience</p>
+    </div>
+    <app-features [props]=featuresCards></app-features>
 </section>

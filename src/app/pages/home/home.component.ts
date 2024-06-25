@@ -4,11 +4,12 @@ import { RouterLink } from '@angular/router';
 import { Button } from '../../models/button.model';
 
 import { UseCasesComponent } from '../../components/use-cases/use-cases.component';
+import { FeaturesComponent } from '../../components/features/features.component';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [CommonModule, RouterLink, UseCasesComponent],
+  imports: [CommonModule, RouterLink, UseCasesComponent, FeaturesComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
@@ -31,7 +32,7 @@ export class HomeComponent {
 
   productsCardList: any = this.individuals
 
-  //Boggle button
+  //Toggle button
   buttons: Button[] = [
     { name: 'For Individuals', active: true },
     { name: 'For Businesses', active: false }
@@ -80,4 +81,12 @@ export class HomeComponent {
         { text: 'Payment Solutions', icon: 'cases-icon8.png' },
       ],
     }
+
+  //Features data
+  featuresCards: any = [
+    { title: '24/7 Account Access', description: 'Enjoy the convenience of accessing your accounts anytime, anywhere through our secure online banking platform. Check balances, transfer funds, and pay bills with ease.' },
+    { title: 'Mobile Banking App', description: 'Stay connected to your finances on the go with our user-friendly mobile banking app. Easily manage your accounts, deposit checks, and make payments from your smartphone or tablet.' },
+    { title: 'Secure Transactions', description: 'Rest assured knowing that your transactions are protected by industry-leading security measures. We employ encryption and multi-factor authentication to safeguard your financial information.' },
+    { title: 'Bill Pay and Transfers', description: 'Save time and avoid late fees with our convenient bill pay service. Set up recurring payments or make one-time transfers between your accounts with just a few clicks.' },
+  ]
 }
