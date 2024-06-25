@@ -4,15 +4,15 @@
             <img src="cases-detail.png" alt="cases detail">
         </div>
         <div *ngFor="let card of props.cards"
-            class="bg-brand-dark rounded-lg h-full flex flex-col lg:p-[30px] px-[14px] py-5 flex-1 items-center z-50">
+            class="bg-brand-dark rounded-lg h-full flex flex-col lg:p-[30px] px-[14px] py-5 flex-1 items-center z-50 border border-[#262626]">
             <div>
                 <img src={{card.icon}} alt="Card product icon">
             </div>
-            <h5 class="lg:text-2xl text-center text-white mt-6">{{card.text}}</h5>
+            <h5 class="lg:text-xl text-center text-white mt-6">{{card.text}}</h5>
         </div>
     </div>
     <div class="flex-1 text-center md:text-left">
-        <h5 class="text-3xl text-white mt-6 font-semibold">{{props.title}}</h5>
+        <h5 class="text-2xl lg:text-3xl text-white mt-6 font-semibold">{{props.title}}</h5>
         <p class="mt-[14px] mb-[62px]">{{props.description}}</p>
         <div class="flex flex-col md:flex-row gap-[70px] md:gap-50 mb-[62px]">
             <div *ngFor="let statistic of props.statistics">
