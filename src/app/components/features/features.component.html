@@ -18,11 +18,11 @@
     <div class="flex-1">
         <div class="grid grid-cols-1 md:grid-cols-2 gap-[30px]">
             <div *ngFor="let card of props"
-                class="col-span-1 p-[50px] bg-brand-secondary rounded-xl border border-[#262626]">
+                class="col-span-1 p-[25px] lg:p-[50px] bg-brand-secondary rounded-xl border border-[#262626]">
                 <div class="flex justify-between items-baseline">
                     <h5 class="text-lg lg:text-2xl xl:text-3xl text-white mt-6 font-semibold">{{card.title}}</h5>
                     <div>
-                        <img src='arrow-icon.png' class="w-full" alt="Card product icon">
+                        <img src='arrow-icon.png' alt="Card product icon">
                     </div>
                 </div>
                 <p class="mt-[30px]">{{card.description}}</p>
