@@ -8,11 +8,12 @@ import { SectionTitleComponent } from '../../components/section-title/section-ti
 import { ToggleButtonComponent } from '../../components/toggle-button/toggle-button.component';
 import { OurProductsComponent } from '../../components/our-products/our-products.component';
 import { FaqComponent } from '../../components/faq/faq.component';
+import { TestimonialsComponent } from '../../components/testimonials/testimonials.component';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [CommonModule, RouterLink, UseCasesComponent, FeaturesComponent, SectionTitleComponent, ToggleButtonComponent, OurProductsComponent, FaqComponent],
+  imports: [CommonModule, RouterLink, UseCasesComponent, FeaturesComponent, SectionTitleComponent, ToggleButtonComponent, OurProductsComponent, FaqComponent, TestimonialsComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
@@ -24,6 +25,7 @@ export class HomeComponent {
     useCases: { title: 'Use', emphasis: 'Cases', subtitle: 'At YourBank, we cater to the diverse needs of individuals and businesses alike, offering a wide range of financial solutions' },
     ourFeatures: { title: 'Our', emphasis: 'Features', subtitle: 'Experience a host of powerful features at YourBank, including seamless online banking, secure transactions, and personalized financial insights, all designed to enhance your banking experience' },
     faq: { title: 'Frequently', emphasis: 'Asked Questions', subtitle: 'Still you have any questions? Contact our Team via support@yourbank.com' },
+    testimonials: { title: 'Our', emphasis: 'Testimonials', subtitle: 'Discover how YourBank has transformed lives with innovative digital solutions and personalized customer service. See why our clients trust us for a secure and prosperous financial journey' },
   }
 
   //Use cases data
