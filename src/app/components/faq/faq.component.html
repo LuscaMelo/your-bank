@@ -6,7 +6,7 @@
 </div>
 <div class="w-full flex justify-center mt-5">
     <button (click)="showAllCards()"
-        class="flex items-center gap-2 rounded-full min-w-[143px] py-[18px] lg:px-[24px] border bg-brand-secondary border-[#262626] hover:text-brand-primary">
+        class="flex items-center justify-center gap-2 rounded-full min-w-[143px] py-[18px] lg:px-[24px] px-5 border bg-brand-secondary border-[#262626] hover:text-brand-primary">
         {{btnActive ? 'Show Less' : 'Load All FAQ’s'}}
         <img [ngClass]="btnActive ? 'rotate-180 duration-500' : 'duration-500'" src="arrow-bottom.png"
             alt="arrow bottom icon">
