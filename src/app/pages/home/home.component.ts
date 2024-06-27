@@ -10,11 +10,12 @@ import { OurProductsComponent } from '../../components/our-products/our-products
 import { FaqComponent } from '../../components/faq/faq.component';
 import { TestimonialsComponent } from '../../components/testimonials/testimonials.component';
 import { CallToActionComponent } from '../../components/call-to-action/call-to-action.component';
+import { HeroComponent } from '../../components/hero/hero.component';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [CommonModule, RouterLink, UseCasesComponent, FeaturesComponent, SectionTitleComponent, ToggleButtonComponent, OurProductsComponent, FaqComponent, TestimonialsComponent, CallToActionComponent],
+  imports: [CommonModule, RouterLink, UseCasesComponent, FeaturesComponent, SectionTitleComponent, ToggleButtonComponent, OurProductsComponent, FaqComponent, TestimonialsComponent, CallToActionComponent, HeroComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
