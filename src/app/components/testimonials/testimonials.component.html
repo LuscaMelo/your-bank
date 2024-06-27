@@ -5,17 +5,18 @@
     </div>
     <app-toggle-button (toggleButton)="toggleCards($event)"></app-toggle-button>
 </div>
-<div
-    class="relative flex flex-wrap gap-[50px] flex-col md:flex-row lg:flex-nowrap justify-between items-center mt-[100px]">
+<div class="relative flex justify-center gap-[50px] mt-[100px] overflow-x-scroll scrollbar">
     <div class="absolute w-full h-full opacity-gradient"></div>
-    <div class="hidden lg:block z-10">
-        <button class="bg-brand-secondary border border-[#262626] rounded-full p-5">
-            <img src="arrow.png" alt="" srcset="">
+    <div class="absolute justify-between top-[100px] w-full hidden lg:flex">
+        <button class="bg-brand-secondary border border-[#262626] rounded-full p-3" (click)="slideDown()">
+            <img src="arrow.png" alt="arrow icon">
+        </button>
+        <button class="bg-brand-secondary border border-[#262626] rounded-full p-3" (click)="slideUp()">
+            <img class="rotate-180" src="arrow.png" alt="arrow icon">
         </button>
     </div>
-    <div
-        class="flex gap-20 w-full overflow-x-scroll scrollbar border border-[#262626] lg:border-0 rounded-lg p-5 lg:p-0">
-        <div class="flex flex-col items-center text-center mx-auto min-w-[85vw] lg:min-w-[404px]">
+    <div *ngFor="let card of testimonials">
+        <div class="text-center">
             <div class="flex items-center gap-5">
                 <div class="border border-[#262626] w-36 h-0 flex-1"></div>
                 <div>
@@ -23,56 +24,17 @@
                 </div>
                 <div class="border border-[#262626] w-36 h-0 flex-1"></div>
             </div>
-            <p class="max-w-[420px] py-[50px]">I recently started my own business, and YourBank has been instrumental in
-                helping me
-                set up my business accounts and secure the financing I needed. Their expert guidance and tailored
-                solutions
-                have been invaluable.</p>
-            <span class="font-medium text-brand-primary">John D</span>
+            <p class="max-w-[420px] py-[50px]">{{card.text}}</p>
+            <span class="font-medium text-brand-primary">{{card.name}}</span>
         </div>
-        <div class="flex flex-col items-center text-center mx-auto min-w-[85vw] lg:min-w-[404px]">
-            <div class="flex items-center gap-5">
-                <div class="border border-[#262626] w-36 h-0 flex-1"></div>
-                <div>
-                    <img src="testimonials-icon.png" class="flex-1" alt="Card product icon">
-                </div>
-                <div class="border border-[#262626] w-36 h-0 flex-1"></div>
-            </div>
-            <p class="max-w-[420px] py-[50px]">I recently started my own business, and YourBank has been instrumental in
-                helping me
-                set up my business accounts and secure the financing I needed. Their expert guidance and tailored
-                solutions
-                have been invaluable.</p>
-            <span class="font-medium text-brand-primary">John D</span>
-        </div>
-        <div class="flex flex-col items-center text-center mx-auto min-w-[85vw] lg:min-w-[404px]">
-            <div class="flex items-center gap-5">
-                <div class="border border-[#262626] w-36 h-0 flex-1"></div>
-                <div>
-                    <img src="testimonials-icon.png" class="flex-1" alt="Card product icon">
-                </div>
-                <div class="border border-[#262626] w-36 h-0 flex-1"></div>
-            </div>
-            <p class="max-w-[420px] py-[50px]">I recently started my own business, and YourBank has been instrumental in
-                helping me
-                set up my business accounts and secure the financing I needed. Their expert guidance and tailored
-                solutions
-                have been invaluable.</p>
-            <span class="font-medium text-brand-primary">John D</span>
-        </div>
-    </div>
-    <div class="hidden lg:block z-10">
-        <button class="bg-brand-secondary border border-[#262626] rounded-full p-5">
-            <img class="rotate-180" src="arrow.png" alt="" srcset="">
-        </button>
     </div>
 </div>
 
-<div class="flex gap-5 justify-center mt-[30px] lg:hidden">
-    <button class="bg-brand-secondary border border-[#262626] rounded-full p-5">
+<div class="flex gap-5 justify-center mt-[50px] lg:hidden">
+    <button class="bg-brand-secondary border border-[#262626] rounded-full p-3" (click)="slideDown()">
         <img src="arrow.png" alt="" srcset="">
     </button>
-    <button class="bg-brand-secondary border border-[#262626] rounded-full p-5">
+    <button class="bg-brand-secondary border border-[#262626] rounded-full p-3" (click)="slideUp()">
         <img class="rotate-180" src="arrow.png" alt="" srcset="">
     </button>
 </div>
