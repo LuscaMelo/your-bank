@@ -2,7 +2,7 @@ import { CommonModule } from '@angular/common';
 import { Component, Input } from '@angular/core';
 import { SectionTitleComponent } from '../section-title/section-title.component';
 import { ToggleButtonComponent } from '../toggle-button/toggle-button.component';
-import { ProductCard } from '../../models/productCard.model';
+import { ProductCard } from '../../models/cards.model';
 
 @Component({
   selector: 'app-our-products',
