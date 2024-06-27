@@ -15,7 +15,7 @@
             <img class="rotate-180" src="arrow.png" alt="arrow icon">
         </button>
     </div>
-    <div *ngFor="let card of testimonials">
+    <div *ngFor="let card of testimonialsList">
         <div class="text-center">
             <div class="flex items-center gap-5">
                 <div class="border border-[#262626] w-36 h-0 flex-1"></div>
@@ -24,7 +24,7 @@
                 </div>
                 <div class="border border-[#262626] w-36 h-0 flex-1"></div>
             </div>
-            <p class="max-w-[420px] py-[50px]">{{card.text}}</p>
+            <p class="max-w-[420px] py-[50px]">{{card.testimony}}</p>
             <span class="font-medium text-brand-primary">{{card.name}}</span>
         </div>
     </div>
