@@ -9,8 +9,6 @@ import { Component, Input } from '@angular/core';
   styleUrl: './use-cases.component.scss'
 })
 export class UseCasesComponent {
-
-  @Input() props: any
-
+  @Input() props!: any
 }
 

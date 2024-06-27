@@ -1,6 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component, Input } from '@angular/core';
 import { Button } from '../../models/button.model';
+import { FeaturesCard } from '../../models/cards.model';
 
 @Component({
   selector: 'app-features',
@@ -15,11 +16,11 @@ export class FeaturesComponent {
     this.featuresList = this.featuresCards.filter((card: any) => card.category == 'Online Banking')
   }
 
-  filteredCards: any
-  featuresList: any
+  filteredCards!: FeaturesCard[]
+  featuresList!: FeaturesCard[]
 
   //Features data
-  featuresCards: any = [
+  featuresCards: FeaturesCard[] = [
     { category: 'Online Banking', title: '24/7 Account Access', description: 'Enjoy the convenience of accessing your accounts anytime, anywhere through our secure online banking platform. Check balances, transfer funds, and pay bills with ease.' },
     { category: 'Online Banking', title: 'Mobile Banking App', description: 'Stay connected to your finances on the go with our user-friendly mobile banking app. Easily manage your accounts, deposit checks, and make payments from your smartphone or tablet.' },
     { category: 'Online Banking', title: 'Secure Transactions', description: 'Rest assured knowing that your transactions are protected by industry-leading security measures. We employ encryption and multi-factor authentication to safeguard your financial information.' },
@@ -43,7 +44,7 @@ export class FeaturesComponent {
       btn.name == buttonClicked ? btn.active = true : btn.active = false
     })
 
-    this.featuresList = this.featuresCards.filter((card: any) => card.category == buttonClicked)
+    this.featuresList = this.featuresCards.filter((card: FeaturesCard) => card.category == buttonClicked)
   }
 
 }

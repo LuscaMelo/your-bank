@@ -12,7 +12,7 @@ import { TestimonialsCard } from '../../models/cards.model';
   styleUrl: './testimonials.component.scss'
 })
 export class TestimonialsComponent {
-  @Input() props: any
+  @Input() props!: any
 
   ngOnInit(): void {
     this.individuals = this.testimonialsCards.filter(card => card.category == 'individuals')

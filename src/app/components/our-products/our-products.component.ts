@@ -3,6 +3,7 @@ import { Component, Input } from '@angular/core';
 import { SectionTitleComponent } from '../section-title/section-title.component';
 import { ToggleButtonComponent } from '../toggle-button/toggle-button.component';
 import { ProductCard } from '../../models/cards.model';
+import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-our-products',
@@ -13,7 +14,7 @@ import { ProductCard } from '../../models/cards.model';
 })
 export class OurProductsComponent {
 
-  @Input() props: any
+  @Input() props!: Title
 
   ngOnInit(): void {
     this.individuals = this.productsCards.filter(card => card.category == 'individuals')

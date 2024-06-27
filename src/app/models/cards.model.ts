@@ -12,3 +12,15 @@ export interface TestimonialsCard {
     name: string
 }
 
+export interface FaqCard {
+    id: string
+    title: string
+    description: string
+}
+
+export interface FeaturesCard {
+    category: string
+    title: string
+    description: string
+}
+
