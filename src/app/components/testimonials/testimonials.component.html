@@ -5,7 +5,7 @@
     </div>
     <app-toggle-button (toggleButton)="toggleCards($event)"></app-toggle-button>
 </div>
-<div class="relative flex justify-center gap-[50px] mt-[100px] overflow-x-scroll scrollbar">
+<div class="relative flex justify-center gap-[50px] mt-[100px] lg:overflow-x-scroll overflow-hidden scrollbar">
     <div class="absolute w-full h-full opacity-gradient"></div>
     <div class="absolute justify-between top-[100px] w-full hidden lg:flex">
         <button class="bg-brand-secondary border border-[#262626] rounded-full p-3" (click)="slideDown()">
