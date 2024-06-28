@@ -28,3 +28,8 @@ export interface OurValuesCard {
     title: string
     description: string
 }
+
+export interface BenefitsCard {
+    title: string
+    description: string
+}
