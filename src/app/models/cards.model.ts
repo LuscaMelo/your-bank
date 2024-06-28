@@ -32,4 +32,5 @@ export interface OurValuesCard {
 export interface BenefitsCard {
     title: string
     description: string
+    icon: string
 }
