@@ -34,3 +34,11 @@ export interface BenefitsCard {
     description: string
     icon: string
 }
+
+export interface JobsCards {
+    title: string
+    location: string
+    department: string
+    description: string
+    requirements: string[]
+}
