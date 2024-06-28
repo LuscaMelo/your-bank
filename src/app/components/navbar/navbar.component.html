@@ -18,7 +18,8 @@
     </div>
     <div class="hidden lg:flex">
         <ul class="flex items-center text-lg">
-            <li class="rounded-full cursor-pointer px-5 py-2" routerLink="/signup">Sign Up</li>
+            <li class="rounded-full cursor-pointer px-5 py-2 hover:text-brand-primary duration-300"
+                routerLink="/signup">Sign Up</li>
             <li class="bg-brand-primary cursor-pointer text-brand-secondary rounded-full font-medium px-7 py-3 duration-300 hover:brightness-[80%] hover:text-black"
                 routerLink="/login">
                 Login</li>
@@ -31,7 +32,7 @@
     </div>
 
 </div>
-<div class="fixed pt-[15vh] top-0 right-0 w-screen h-screen bg-brand-secondary duration-300 ease-in-out z-50"
+<div class="fixed pt-[15vh] top-0 right-0 w-screen h-screen bg-brand-secondary duration-150 ease-in-out z-50"
     [ngClass]="menuHidden ? 'right-[150vw]' : ''">
     <div class="absolute left-[5%] top-[2.5%] flex justify-center items-center">
         <button class="bg-brand-primary cursor-pointer rounded-full px-2 py-2 w-9" (click)="closeMenu()">
