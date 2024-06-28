@@ -24,3 +24,7 @@ export interface FeaturesCard {
     description: string
 }
 
+export interface OurValuesCard {
+    title: string
+    description: string
+}

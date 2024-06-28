@@ -1,0 +1,9 @@
+<app-section-title [props]="heading"></app-section-title>
+<div class="grid md:grid-cols-2 gap-20 mt-20">
+    <div *ngFor="let card of ourValuesCards"
+        class="px-4 lg:px-[30px] pt-4 lg:pt-8 lg:pb-2 border-s border-brand-primary">
+        <h4 class="font-semibold text-3xl lg:text-5xl xl:text-6xl text-[#4C4C4D] pb-[14px] lg:pb-8 xl:pb-10">
+            {{card.title}}</h4>
+        <p>{{card.description}}</p>
+    </div>
+</div>
