@@ -4,7 +4,7 @@
   </div>
   <div class="max-w-[1612px] px-3 md:px-5 mx-auto text-brand-grey">
     <app-navbar></app-navbar>
-    <router-outlet />
+    <router-outlet (activate)="scrollToTop()" />
   </div>
   <footer class="mt-20 lg:mt-[150px]">
     <app-footer></app-footer>

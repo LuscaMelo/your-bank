@@ -12,4 +12,8 @@ import { FooterComponent } from './components/footer/footer.component';
 })
 export class AppComponent {
   title = 'your-bank';
+
+  scrollToTop() {
+    window.scroll(0, 0)
+  }
 }
