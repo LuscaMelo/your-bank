@@ -4,19 +4,13 @@
         <img src="cta-detail.png" class="w-[50%] lg:w-full" alt="detail">
     </div>
     <div class="text-center lg:text-start z-50">
-        <h4 class="text-2xl lg:text-[40px] text-white px-4 lg:px-0">Start your financial journey with <span
-                class="text-brand-primary">YourBank
-                today!</span></h4>
-        <p class="lg:max-w-[75%] mt-[14px] mb-7 lg:mt-7">Ready to take control of your finances? Join YourBank now, and
-            let us help you
-            achieve
-            your financial goals
-            with our tailored solutions and exceptional customer service.</p>
+        <h4 class="text-2xl lg:text-[40px] text-white px-4 lg:px-0">{{callToAction.title}} <span
+                class="text-brand-primary">{{callToAction.emphasys}}</span></h4>
+        <p class="lg:max-w-[75%] mt-[14px] mb-7 lg:mt-7">{{callToAction.description}}</p>
     </div>
     <div class="flex justify-center lg:justify-end lg:w-[30%]">
         <button
             class="bg-brand-primary cursor-pointer text-brand-secondary rounded-full font-semibold px-7 py-4 duration-300 hover:brightness-[85%] hover:text-black z-50 hover:px-8"
-            routerLink="/signup">
-            Open Account</button>
+            routerLink="/signup">Open Account</button>
     </div>
 </div>

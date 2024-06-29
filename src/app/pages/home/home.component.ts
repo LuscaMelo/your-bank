@@ -11,6 +11,7 @@ import { FaqComponent } from '../../components/faq/faq.component';
 import { TestimonialsComponent } from '../../components/testimonials/testimonials.component';
 import { CallToActionComponent } from '../../components/call-to-action/call-to-action.component';
 import { HeroComponent } from '../../components/hero/hero.component';
+import { CallToAction } from '../../models/callToAction.model';
 
 @Component({
   selector: 'app-home',
@@ -66,4 +67,11 @@ export class HomeComponent {
         { text: 'Payment Solutions', icon: 'cases-icon8.png' },
       ],
     }
+
+  //Call To Action
+  callToAction: CallToAction = {
+    title: 'Start your financial journey with ',
+    emphasys: 'YourBank today!',
+    description: 'Ready to take control of your finances? Join YourBank now, and let us help you achieve your financial goals with our tailored solutions and exceptional customer service.',
+  }
 }
