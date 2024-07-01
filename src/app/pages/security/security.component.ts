@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
 import { Overview } from '../../models/overview.model';
 import { OverviewComponent } from '../../components/overview/overview.component';
+import { HowWeProtectYouComponent } from '../../components/how-we-protect-you/how-we-protect-you.component';
 
 @Component({
   selector: 'app-security',
   standalone: true,
-  imports: [OverviewComponent],
+  imports: [OverviewComponent, HowWeProtectYouComponent],
   templateUrl: './security.component.html',
   styleUrl: './security.component.css'
 })

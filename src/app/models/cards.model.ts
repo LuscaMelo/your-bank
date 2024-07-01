@@ -50,3 +50,9 @@ export interface releasesCard {
     description: string
     image: string
 }
+
+export interface HowWeProtectYouCard {
+    title: string
+    description: string
+    icon: string
+}
