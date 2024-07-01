@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
 import { OverviewComponent } from '../../components/overview/overview.component';
 import { MissionComponent } from '../../components/mission/mission.component';
+import { PressReleasesComponent } from '../../components/press-releases/press-releases.component';
 
 @Component({
   selector: 'app-about',
   standalone: true,
-  imports: [OverviewComponent, MissionComponent],
+  imports: [OverviewComponent, MissionComponent, PressReleasesComponent],
   templateUrl: './about.component.html',
   styleUrl: './about.component.css'
 })
