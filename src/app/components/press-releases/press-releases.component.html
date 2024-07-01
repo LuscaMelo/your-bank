@@ -2,11 +2,11 @@
 
 <div class="grid md:grid-cols-2 gap-[30px] mt-20">
     <div *ngFor="let card of releasesCards"
-        class="p-5 lg:p-[30px] bg-brand-secondary border border-[#262626] rounded-[2.5rem]">
+        class="p-5 lg:p-[30px] bg-brand-secondary border border-[#262626] rounded-2xl lg:rounded-[2.5rem]">
         <div>
             <img src={{card.image}} alt="Press releases image">
         </div>
-        <div class="lg:px-[30px] mt-[50px]">
+        <div class="lg:px-[30px] lg:mt-[50px] mt-[30px]">
             <h5 class="font-medium text-white text-xl lg:text-2xl xl:text-3xl">{{card.title}}</h5>
             <div class="flex flex-wrap gap-2 mt-3 lg:mt-5 mb-6">
                 <span class="bg-brand-dark border border-[#262626] px-[10px] lg:px-4 py-[6px] rounded-full">Location:
