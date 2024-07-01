@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { SectionTitleComponent } from '../section-title/section-title.component';
 import { CommonModule } from '@angular/common';
-import { JobsCards } from '../../models/cards.model';
+import { JobsCard } from '../../models/cards.model';
 
 @Component({
   selector: 'app-jobs',
@@ -18,7 +18,7 @@ export class JobsComponent {
   }
 
   //Cards - Jobs Openings
-  jobsCards: JobsCards[] = [
+  jobsCards: JobsCard[] = [
     {
       title: 'Relationship Manager',
       location: 'Brazil',

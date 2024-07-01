@@ -35,10 +35,18 @@ export interface BenefitsCard {
     icon: string
 }
 
-export interface JobsCards {
+export interface JobsCard {
     title: string
     location: string
     department: string
     description: string
     requirements: string[]
+}
+
+export interface releasesCard {
+    title: string
+    location: string
+    date: string
+    description: string
+    image: string
 }
