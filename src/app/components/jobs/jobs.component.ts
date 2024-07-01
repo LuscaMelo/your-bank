@@ -2,11 +2,12 @@ import { Component } from '@angular/core';
 import { SectionTitleComponent } from '../section-title/section-title.component';
 import { CommonModule } from '@angular/common';
 import { JobsCard } from '../../models/cards.model';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-jobs',
   standalone: true,
-  imports: [CommonModule, SectionTitleComponent],
+  imports: [CommonModule, RouterLink, SectionTitleComponent],
   templateUrl: './jobs.component.html',
   styleUrl: './jobs.component.scss'
 })
