@@ -3,27 +3,25 @@
 </section>
 
 <section>
-    <app-our-products [props]="titles.ourProducts"></app-our-products>
+    <app-our-products></app-our-products>
 </section>
 
 <section class="mt-20 lg:mt-[150px]">
-    <app-section-title [props]="titles.useCases"></app-section-title>
-    <app-use-cases [props]=individualsContent></app-use-cases>
-    <app-use-cases [props]=businessesContent></app-use-cases>
+    <app-section-title [sectionTitle]="UseCasesTitle"></app-section-title>
+    <app-use-cases [useCasesData]=individualsContent></app-use-cases>
+    <app-use-cases [useCasesData]=businessesContent></app-use-cases>
 </section>
 
 <section class="mt-20 lg:mt-[200px]">
-    <app-section-title [props]="titles.ourFeatures"></app-section-title>
     <app-features></app-features>
 </section>
 
 <section class="mt-20 lg:mt-[200px]">
-    <app-section-title [props]="titles.faq"></app-section-title>
     <app-faq></app-faq>
 </section>
 
 <section class="mt-20 lg:mt-[150px]">
-    <app-testimonials [props]="titles.testimonials"></app-testimonials>
+    <app-testimonials></app-testimonials>
 </section>
 
 <section class="mt-20 lg:mt-[150px]">

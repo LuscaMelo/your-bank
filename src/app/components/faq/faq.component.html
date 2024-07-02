@@ -1,3 +1,5 @@
+<app-section-title [sectionTitle]="title"></app-section-title>
+
 <div class="mt-20 grid lg:grid-cols-2 gap-[30px]" [ngClass]="btnActive ? '' : 'opacity-gradient'">
     <div *ngFor="let card of faqList" class="p-[25px] lg:p-[50px] border border-[#262626] rounded-xl">
         <h5 class="text-lg lg:text-xl text-white mb-7 pb-7 border-b border-[#262626] font-semibold">{{card.title}}</h5>

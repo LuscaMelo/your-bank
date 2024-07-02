@@ -1,5 +1,13 @@
 import { Component } from '@angular/core';
+
+//Components
 import { SectionTitleComponent } from '../section-title/section-title.component';
+
+//Model
+import { Title } from '../../models/Title.model';
+
+//Data
+import { aboutTitles } from '../../data/aboutData';
 
 @Component({
   selector: 'app-mission',
@@ -11,7 +19,5 @@ import { SectionTitleComponent } from '../section-title/section-title.component'
 export class MissionComponent {
 
   //Title
-  heading: any = {
-    title: 'Mission &', emphasis: ' Vision', subtitle: 'We envision being a leading force in the industry, driven by innovation, integrity, and inclusivity, creating a brighter financial future for individuals and businesses while maintaining a strong commitment to customer satisfaction and community development'
-  }
+  title: Title = aboutTitles.mission
 }

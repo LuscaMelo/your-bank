@@ -1,6 +1,8 @@
 import { Component, EventEmitter, Output } from '@angular/core';
-import { Button } from '../../models/button.model';
 import { CommonModule } from '@angular/common';
+
+//Model
+import { Button } from '../../models/button.model';
 
 @Component({
   selector: 'app-toggle-button',

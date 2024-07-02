@@ -1,5 +1,8 @@
 import { Component, Input } from '@angular/core';
 
+//Model
+import { Title } from '../../models/Title.model';
+
 @Component({
   selector: 'app-section-title',
   standalone: true,
@@ -8,7 +11,6 @@ import { Component, Input } from '@angular/core';
   styleUrl: './section-title.component.scss'
 })
 
-
 export class SectionTitleComponent {
-  @Input() props!: any
+  @Input() sectionTitle!: Title
 }

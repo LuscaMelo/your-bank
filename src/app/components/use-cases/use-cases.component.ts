@@ -1,6 +1,9 @@
 import { CommonModule } from '@angular/common';
 import { Component, Input } from '@angular/core';
 
+//Model
+import { UseCasesData } from '../../models/useCases.model';
+
 @Component({
   selector: 'app-use-cases',
   standalone: true,
@@ -9,6 +12,6 @@ import { Component, Input } from '@angular/core';
   styleUrl: './use-cases.component.scss'
 })
 export class UseCasesComponent {
-  @Input() props!: any
+  @Input() useCasesData!: UseCasesData
 }
 

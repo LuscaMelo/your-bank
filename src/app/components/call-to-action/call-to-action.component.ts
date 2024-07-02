@@ -1,6 +1,8 @@
 import { CommonModule } from '@angular/common';
 import { Component, Input } from '@angular/core';
 import { RouterLink } from '@angular/router';
+
+//Model
 import { CallToAction } from '../../models/callToAction.model';
 
 @Component({
