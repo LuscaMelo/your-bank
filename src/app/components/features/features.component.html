@@ -11,7 +11,8 @@
         </div>
     </div>
     <div class="flex-1">
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-[30px]">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-[30px] opacity-0 translate-x-[-100px] duration-700"
+            id="featuresCards">
             <div *ngFor="let card of featuresList"
                 class="col-span-1 p-[25px] lg:p-[50px] bg-brand-secondary rounded-xl border border-[#262626]">
                 <div class="flex justify-between items-baseline">

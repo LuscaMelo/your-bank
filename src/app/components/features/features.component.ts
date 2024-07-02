@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 
 //Components
 import { SectionTitleComponent } from '../section-title/section-title.component';
@@ -47,6 +47,18 @@ export class FeaturesComponent {
     })
 
     this.featuresList = this.featuresCards.filter((card: FeaturesCard) => card.category == buttonClicked)
+  }
+
+  //Enter Animation
+  @HostListener('window:scroll', ['$event'])
+  onScroll(event: Event): void {
+    const cardContainer: any = document.getElementById('featuresCards');
+    const topDistance = cardContainer.getBoundingClientRect().top;
+
+    if (topDistance < window.innerHeight - 400) {
+      cardContainer.classList.add('opacity-100');
+      cardContainer.classList.add('translate-x-0');
+    }
   }
 
 }
