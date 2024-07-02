@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 
 //Components
 import { SectionTitleComponent } from '../section-title/section-title.component';
@@ -25,4 +25,15 @@ export class PressReleasesComponent {
 
   //Releases Cards Data
   releasesCards: releasesCard[] = releasesCards
+
+  //Enter Animation
+  @HostListener('window:scroll', ['$event'])
+  onScroll(event: Event): void {
+    const cardContainer: any = document.getElementById('pessReleasesCards');
+    const topDistance = cardContainer.getBoundingClientRect().top;
+
+    if (topDistance < window.innerHeight - 350) {
+      cardContainer.classList.add('opacity-100');
+    }
+  }
 }
