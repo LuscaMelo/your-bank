@@ -50,7 +50,6 @@ export class OurProductsComponent {
 
     if (topDistance < window.innerHeight - 400) {
       cardContainer.classList.add('opacity-100');
-      cardContainer.classList.add('translate-x-0');
     }
   }
 }

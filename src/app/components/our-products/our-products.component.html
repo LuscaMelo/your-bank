@@ -3,7 +3,7 @@
     <app-section-title [sectionTitle]="title"></app-section-title>
     <app-toggle-button (toggleButton)="toggleCards($event)"></app-toggle-button>
 </div>
-<div class="flex flex-wrap flex-col md:flex-row gap-10 md:gap-20 lg:flex-nowrap justify-between mt-[100px] opacity-0 translate-x-[-100px] duration-700"
+<div class="flex flex-wrap flex-col md:flex-row gap-10 md:gap-20 lg:flex-nowrap justify-between mt-[100px] opacity-0 duration-700"
     id="ourProductsCards">
     <div [ngClass]="card.border ? 'lg:border-x lg:border-y-0 md:border-y-0 border-y border-[#262626] lg:px-24 py-10 md:py-0' : ''"
         *ngFor="let card of productsCardList" class="flex flex-col items-center text-center mx-auto">
