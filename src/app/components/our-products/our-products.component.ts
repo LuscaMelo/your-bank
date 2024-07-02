@@ -48,7 +48,7 @@ export class OurProductsComponent {
     const cardContainer: any = document.getElementById('ourProductsCards');
     const topDistance = cardContainer.getBoundingClientRect().top;
 
-    if (topDistance < window.innerHeight - 400) {
+    if (topDistance < window.innerHeight - 350) {
       cardContainer.classList.add('opacity-100');
     }
   }

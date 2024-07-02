@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 //Components
@@ -25,4 +25,15 @@ export class OurValuesComponent {
 
   //Cards - Our Products
   ourValuesCards: OurValuesCard[] = ourValuesCards
+
+  //Enter Animation
+  @HostListener('window:scroll', ['$event'])
+  onScroll(event: Event): void {
+    const cardContainer: any = document.getElementById('ourValuesCards');
+    const topDistance = cardContainer.getBoundingClientRect().top;
+
+    if (topDistance < window.innerHeight - 350) {
+      cardContainer.classList.add('opacity-100');
+    }
+  }
 }
